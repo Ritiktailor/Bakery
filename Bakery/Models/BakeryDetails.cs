@@ -2,18 +2,20 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace Bakery.Models
 {
     public class BakeryDetails
     {
+        /* Just in Information */
         /* packs for Vegemite Scroll */
         public static Dictionary<double, double> VegemiteScroll = new Dictionary<double, double>()
         {
             {3,6.99},
             {5,8.99},
         };
-        private static double[] VegemiteScroll_ar = new double[] {
+        public double[] VegemiteScroll_ar = new double[] {
             3,
             5
         };
@@ -25,7 +27,7 @@ namespace Bakery.Models
             {5,16.95},
             {8,24.95},
         };
-        private static double[] BlueberryMuffin_ar = new double[] {
+        public double[] BlueberryMuffin_ar = new double[] {
             2,
             5,
             8
@@ -38,10 +40,12 @@ namespace Bakery.Models
             {5,9.95},
             {8,16.99},
         };
-        private static double[] Croissant_ar = new double[] {
+        private double[] Croissant_ar = new double[] {
             3,
             5,
             9
         };
+
+       
     }
 }
