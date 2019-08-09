@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Bakery";
 }
 
 
@@ -7,11 +7,13 @@
 <div class="row">
     <label>Bakery item select and enter the Number of quantity to check the output of each item</label><br />
     <select id="drpBakeryitem" style="background: #f3f3f3;width: 39%;">
-        <option>Please select Bakery item</option>
+        <option value="">Please select Bakery item</option>
         <option>VS5</option>
         <option>MB11</option>
         <option>CF</option>
     </select>
-    <input type="text" id="txtNumberofitem" /><br/>
-    <label id="lbltotalvalue" ></label>
+    <input type="number" id="txtNumberofitem"  />
+    <label id="lbltotalvalue"></label>
+    <br />
+    <input type="submit" id="submitOrdersList" onclick="Totalvalue()" />
 </div>

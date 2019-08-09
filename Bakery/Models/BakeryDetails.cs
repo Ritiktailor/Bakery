@@ -36,9 +36,9 @@ namespace Bakery.Models
         /* packs for Croissant */
         public static Dictionary<double, double> Croissant = new Dictionary<double, double>()
         {
-            {2,5.95},
+            {3,5.95},
             {5,9.95},
-            {8,16.99},
+            {9,16.99},
         };
         private double[] Croissant_ar = new double[] {
             3,
